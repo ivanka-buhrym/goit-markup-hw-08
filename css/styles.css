@@ -84,7 +84,7 @@ text-transform: uppercase;
 }
 .feature-list .text{
    font-size: 14px;
-line-height: 1,71;
+line-height: 1.71;
 }
 
 /* Team list */
@@ -155,7 +155,7 @@ font-size: 26px;
 line-height: 1.19;
 letter-spacing: 0.03em;
 text-decoration: none;}
-.footer-contact .link{color: var(--primary-text-color);
+.footer-contact .link{color: rgba(255, 255, 255, 0.6);
 font-size: 14px;
 line-height: 1.71;
 font-style: normal;
