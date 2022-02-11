@@ -109,7 +109,7 @@ button {
 }
 .header-container nav ul li {
   align-self: start;
-  margin-right: 25px;
+  margin-right: 50px;
 }
 .header-container .contact-list {
   position: relative;
@@ -144,7 +144,7 @@ button {
   margin-bottom: 10px;
 }
 .section-item-02 {
-  /* padding: 94px 0px; */
+  padding-bottom: 94px;
 }
 .section-item-02 ul {
   position: relative;
@@ -172,7 +172,7 @@ button {
   border-radius: 0px 0px 4px 4px;
 }
 .section-item-03 ul li img {
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 .section-item-03 .name-position
 {padding-top: 30px;
@@ -183,8 +183,8 @@ padding-bottom: 30px;}
 }
 
 .section-item-04 {
-  margin-top: 94px;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .section-item-04 ul.button-list {
   position: relative;
@@ -203,10 +203,11 @@ padding-bottom: 30px;}
   display: flex;
   flex-wrap: wrap;
   margin-right: -30px;
+  margin-top: -30px;
 }
 .section-item-04 .project-list li {
   margin-right: 30px;
-  margin-top: 34px;
+  margin-top: 30px;
   flex-basis: calc((100% - 90px) / 3);
 }
 .section-item-04 .project-list li img {
@@ -223,7 +224,7 @@ padding-bottom: 30px;}
   margin-bottom: 4px;
 }
 .section-item-04 .project-list li p {
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 .site-nav .link {
   color: var(--title-text-color);
