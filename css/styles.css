@@ -107,7 +107,6 @@ button {
   text-align: center;
   border-radius: 4px;
   padding: 6px 22px;
-  min-width: 103px;
   border: 1px solid transparent;
 }
 .button.secondary:hover,
@@ -160,10 +159,7 @@ button {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
-.contact .link:hover,
-.contact .link:focus {
-  color: var(--accent-color);
-}
+
 
 .header {
   border-bottom: 1px solid #ececec;
@@ -225,13 +221,28 @@ button {
   fill: var(--icon-color);
 }
 
-.icon-mail:hover {
+/* .icon-mail:hover {
   fill: var(--accent-color);
 }
 .icon-phone:hover {
   fill: var(--accent-color);
+} */
+.mail-contact:hover, .mail-contact:focus{
+ color: var(--accent-color);
 }
 
+.mail-contact:hover .icon-mail, .mail-contact:focus .icon-mail{
+  fill: var(--accent-color);
+ }
+ 
+ .phone-contact:hover, .phone-contact:focus{
+  color: var(--accent-color);
+ }
+ 
+ .phone-contact:hover .icon-phone, .phone-contact:focus .icon-phone{
+   fill: var(--accent-color);
+  }
+  
 /* Банер */
 /* Section hero */
 .hero {
@@ -283,19 +294,23 @@ button {
 .section-item-01 {
   padding: 94px 0px;
   text-align: center;
+  margin-right: -30px;
 }
-.section-item-01 ul {
+.section-item-01 .feature-list {
   position: relative;
   display: flex;
+
 }
-.section-item-01 ul li {
-  margin-left: 15px;
-  margin-right: 15px;
+.section-item-01 .list-item {
+  margin-right: 30px;
   text-align: start;
+  width: 270px;
+  
 }
-.section-item-01 ul li h3 {
+.section-item-01 .list-item h3 {
   margin-bottom: 10px;
 }
+
 .feature-icons {
   display: flex;
   padding: 0px;
@@ -453,11 +468,11 @@ button {
   justify-content: center;
   margin-bottom: 50px;
 }
-.section-item-04 ul.button-list li {
+.section-item-04 .button-list li {
   /* position: relative; */
   margin: 4px;
 }
-.section-item-04 ul.project-list {
+.section-item-04 .project-list {
   /* position: relative; */
   display: flex;
   flex-wrap: wrap;
@@ -473,7 +488,7 @@ button {
   margin-bottom: 0;
   display: block;
 }
-.section-item-04 .project-list li .card-description {
+.section-item-04 .card-description {
   margin-top: 0;
   padding: 20px 24px;
   border: 1px solid #eeeeee;
@@ -564,13 +579,17 @@ button {
   font-style: normal;
   text-decoration: none;
 }
-
-.social-media {
-  margin-bottom: 100px;
+.footer-general{
+  display: flex;
+  align-items: baseline;
 }
 .social-media p {
-  padding-bottom: 20px;
-  color: var(--primary-white-color);
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+margin-bottom: 20px;
+color: var(--primary-white-color);
 }
 
 .social-media .social-icons {
