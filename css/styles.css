@@ -21,6 +21,7 @@ ul,
 ol {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 button {
   cursor: pointer;
@@ -205,17 +206,16 @@ button {
 .header-container .contact-list ul {
   position: relative;
   display: flex;
-  
 }
 .header-container .contact-list ul li {
   margin-left: 25px;
   margin-right: 25px;
-  
-}
-.social-icons{
-  display: flex;
 }
 
+.contact-list .link{
+  display: flex;
+}
+.i
 
 
 /* Банер */
@@ -352,12 +352,12 @@ align-items: center;
   background: #F5F4FA;
 }
 
-.section-item-03 ul {
+.section-item-03 .team-list {
   position: relative;
   display: flex;
   
 }
-.section-item-03 ul li {
+.section-item-03 ul .team-member {
   margin-right: 30px; 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -372,32 +372,36 @@ padding-bottom: 30px;}
 .section-item-03 ul li h3 {
   margin-bottom: 10px;
 }
+.section-item-03 .text{
+  margin-bottom: 16px;
+}
 
 .section-item-03 .social-icons{
   display: flex;
   padding: 0px;
   margin: 0px;
- width: 270px;
-  height: 44px;
   justify-content: center;
-align-items: center;
+  align-items: center;
 }
-.section-item-03 .social-icon{
+
+.section-item-03 .social-link{
   display: flex;
   padding: 0px;
-  margin: 0px;
-  width: 44px;
-  height: 44px;
+  margin-right: 10px;
   justify-content: center;
-align-items: center;
+  align-items: center;
   background-color: var(--primary-white-color);
   color: var(--title-text-color);
   border-radius: 50%;
-  
 }
-.section-item-03 .social-icon:hover, .section-item-03 .social-icon:focus 
+
+.social-icon{
+  width: 44px;
+  height: 44px;}
+
+.section-item-03 .social-link:hover, .section-item-03 .social-link:focus 
 {
-  background-color: var(--accent-color);
+background-color: var(--accent-color);
 color: var(--primary-white-color);
 fill: var(--accent-color);
 border-radius: 50%;
@@ -495,7 +499,6 @@ align-items: center;}
 
 .client-icon{
   fill: #AFB1B8;;
-  
 }
 
  .client-logo:hover,
@@ -514,6 +517,7 @@ fill: var(--accent-color);
 .footer ul {
   position: relative;
   display: block;
+  margin-right: 70px;
 }
 .footer ul li {
   margin-bottom: 9px;
@@ -536,16 +540,12 @@ fill: var(--accent-color);
   text-decoration: none;
 }
 
-.foorer-general{
-  display: flex;
-}
-
-
 .social-media{
+
   margin-top: 72px;
   margin-bottom: 100px;
 }
-.social-media .title{
+.social-media p{
   padding-bottom: 20px;
   color: var(--primary-white-color);}
 
@@ -564,7 +564,6 @@ fill: var(--accent-color);
   background-color: rgba(255, 255, 255, 0.1);
   border: none;
   border-radius: 50%;
-  
 }
 
 .footer-contact .link.adress {
