@@ -150,10 +150,10 @@ button {
   color: var(--accent-color);
   text-decoration: none;
 }
-.header-item{
+.header-item {
   position: relative;
 }
-.header-item .current::after{
+.header-item .current::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -173,7 +173,6 @@ button {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
-
 
 .header {
   border-bottom: 1px solid #ececec;
@@ -235,41 +234,49 @@ button {
   fill: var(--icon-color);
 }
 
-.mail-contact{
+.mail-contact {
   transition-property: color;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
- 
-.mail-contact:hover, .mail-contact:focus{
- color: var(--accent-color);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.mail-contact .icon-mail{
+
+.mail-contact:hover,
+.mail-contact:focus {
+  color: var(--accent-color);
+}
+.mail-contact .icon-mail {
   transition-property: fill;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-.mail-contact:hover .icon-mail, .mail-contact:focus .icon-mail{
+.mail-contact:hover .icon-mail,
+.mail-contact:focus .icon-mail {
   fill: var(--accent-color);
- }
- 
- .phone-contact{
+}
+
+.phone-contact {
   transition-property: color;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
- .phone-contact:hover, .phone-contact:focus{
+.phone-contact:hover,
+.phone-contact:focus {
   color: var(--accent-color);
- }
+}
 
- .mail-contact .icon-phone{
+.mail-contact .icon-phone {
   transition-property: fill;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
- .phone-contact:hover .icon-phone, .phone-contact:focus .icon-phone{
-   fill: var(--accent-color);
-  }
-  
+.phone-contact:hover .icon-phone,
+.phone-contact:focus .icon-phone {
+  fill: var(--accent-color);
+}
+
 /* Банер */
 /* Section hero */
 .hero {
@@ -326,13 +333,11 @@ button {
 .section-item-01 .feature-list {
   position: relative;
   display: flex;
-
 }
 .section-item-01 .list-item {
   margin-right: 30px;
   text-align: start;
   width: 270px;
-  
 }
 .section-item-01 .list-item h3 {
   margin-bottom: 10px;
@@ -377,7 +382,6 @@ button {
 /* Чем мы занимаемся */
 .section-item-02 {
   padding-bottom: 94px;
-  
 }
 .section-item-02 .speciality-list {
   position: relative;
@@ -391,11 +395,11 @@ button {
   position: relative;
 }
 
-.speciality-img-wrap{
+.speciality-img-wrap {
   position: relative;
   overflow: hidden;
 }
-.speciality-text{
+.speciality-text {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -479,10 +483,11 @@ button {
 .social-icon {
   fill: var(--icon-color);
 }
-.social-link{
+.social-link {
   transition-property: background-color, color, fill;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .section-item-03 .social-link:hover,
 .section-item-03 .social-link:focus {
@@ -490,10 +495,11 @@ button {
   color: var(--primary-white-color);
   fill: var(--accent-color);
 }
-.social-link svg{
+.social-link svg {
   transition-property: background-color, fill;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .section-item-03 .social-link:hover svg,
 .section-item-03 .social-link:focus svg {
@@ -541,13 +547,12 @@ button {
   margin-right: -30px;
   margin-top: -30px;
 }
-  
+
 .section-item-04 .project-item {
   position: relative;
   margin-right: 30px;
   margin-top: 30px;
   flex-basis: calc((100% - 90px) / 3);
-
 }
 .section-item-04 .project-item img {
   margin-bottom: 0;
@@ -563,12 +568,11 @@ button {
   margin-bottom: 4px;
 }
 
-
-.project-img-wrap{
+.project-img-wrap {
   position: relative;
   overflow: hidden;
 }
-.project-text{
+.project-text {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -580,17 +584,20 @@ button {
   background-color: rgba(33, 150, 243, 0.9);
   height: 100%;
   transform: translateY(100%);
-  transition-property:  transform, box-shadow;
+  transition-property: transform, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.project-item:hover .project-text{
+.project-item:hover .project-text {
   transform: rotateY(0);
 }
 
-.button-list li, .project-list li{transition-property:   box-shadow;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+.button-list li,
+.project-list li {
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .button-list li:hover,
 .button-list li:focus {
@@ -630,10 +637,12 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
   fill: #afb1b8;
 }
 
-.client-logo, .client-logo svg {
-  transition-property:  border, fill;
+.client-logo,
+.client-logo svg {
+  transition-property: border, fill;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .client-logo:hover,
 .client-logo:focus {
@@ -678,17 +687,17 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
   font-style: normal;
   text-decoration: none;
 }
-.footer-general{
+.footer-general {
   display: flex;
   align-items: baseline;
 }
 .social-media p {
-font-weight: 700;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.03em;
-margin-bottom: 20px;
-color: var(--primary-white-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+  color: var(--primary-white-color);
 }
 
 .social-media .social-icons {
@@ -719,18 +728,83 @@ color: var(--primary-white-color);
   fill: var(--primary-white-color);
   color: rgba(255, 255, 255, 0.1);
 }
-.social-link .social-link svg{
-  transition-property:  background-color,  color, fill;
+.social-link .social-link svg {
+  transition-property: background-color, color, fill;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
+.emai-section {
+  margin-left: 93px;
+}
+
+.footer-general .email-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+  margin-bottom: 20px;
+}
+.email-invite {
+  position: relative;
+  display: flex;
+}
+.footer-general form input {
+  width: 358px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding-left: 16px;
+}
+
+.footer-general form input[type="email"] {
+  position: relative;
+  display: flex;
+}
+
+.footer-general form::placeholder {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.email-button {
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  width: 200px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-left: 12px;
+}
+.email-button[type="submit"] {
+  position: relative;
+  display: flex;
+}
+
+.email-button svg {
+  margin-left: 10px;
+}
 .social-media .social-link:hover,
 .social-media .social-link:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
   fill: var(--accent-color);
   border-radius: 50%;
- 
 }
 .social-media .social-link:hover svg,
 .social-media .social-link:focus svg {
@@ -754,31 +828,29 @@ color: var(--primary-white-color);
   color: var(--accent-color);
 }
 
-.backdrop{
+.backdrop {
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);;
+  background-color: rgba(0, 0, 0, 0.2);
   position: fixed;
   top: 0;
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop.is-hidden{
+.backdrop.is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
-  
 }
 
-.backdrop.is-hidden .modal{
+.backdrop.is-hidden .modal {
   transform: translate(-50%, -50%);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
-.modal{
+.modal {
   width: 528px;
   min-height: 581px;
   background-color: var(--primary-white-color);
@@ -802,21 +874,83 @@ color: var(--primary-white-color);
   width: 30px;
   height: 30px;
 }
-.modal-close .icon-vector{
+.modal-close .icon-vector {
   color: #000;
   position: absolute;
   top: 8px;
   right: 8px;
   width: 11px;
   height: 11px;
-  }
+}
 
-
-.modal-title{
+.modal-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  margin-bottom: 12px;
+}
+
+.modal-field {
+  margin-bottom: 10px;
+}
+.modal-input {
+  width: 100%;
+  height: 45px;
+  background-color: transparent;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 14px;
+  color: var(--title-text-color);
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.modal-text {
+  width: 100%;
+  height: 100px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  background-color: transparent;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding: 10px;
+  resize: none;
+}
+.modal-input:hover,
+.modal-input:focus-visible,
+.modal-text:hover,
+.modal-text:focus-visible {
+  border: 1px solid #2196f3;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.modal-input::placeholder {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-text::placeholder {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.modal-label {
+  display: block;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--primary-text-color);
+}
+.modal-form .submit {
+  width: 200px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
