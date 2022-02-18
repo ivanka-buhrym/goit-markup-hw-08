@@ -1,3 +1,29 @@
-body{
-    color: rebeccapurple;
-}
+@import "./utils/variables";
+
+
+@import "./base/reset";
+@import "./base/common";
+
+@import "./utils/hidden";
+@import "./utils/placeholder";
+@import "./utils/mixins";
+
+
+@import "./components/container";
+@import "./components/btn";
+@import "./components/title";
+@import "./components/contacts"; 
+@import "./components/logo"; 
+
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/feature";
+@import "./layout/our-speciality";
+@import "./layout/team";
+@import "./layout/clients";
+@import "./layout/portfolio";
+@import "./layout/modal";
+@import "./layout/footer";
+@import "./layout/body";
+
+

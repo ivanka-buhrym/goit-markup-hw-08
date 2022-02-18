@@ -1,0 +1,8 @@
+
+  @mixin font($fz, $fw, $ls, $lh) {
+    font-size: $fz;
+    font-weight: $fw;
+    letter-spacing: $ls;
+    line-height: $lh;
+  }
+  // Якщо у нас змінна задана браузером, можна прописати значення null

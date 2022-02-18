@@ -1,0 +1,45 @@
+.section-item-05 {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  
+  .section-item-05 ul {
+    position: relative;
+    display: flex;
+    margin-right: -30px;
+  }
+  
+  .section-item-05 .client-logo {
+    margin-right: 30px;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    justify-content: center;
+    @extend %align-list;
+  }
+  
+  .client-icon {
+    fill: #afb1b8;
+  }
+  
+  .client-logo{
+    transition-property: border, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      border: 1px solid var(--accent-color);
+      fill: var(--accent-color);
+    }
+  }
+  
+  .client-logo svg {
+    transition-property: border, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      fill: var(--accent-color);
+    }}

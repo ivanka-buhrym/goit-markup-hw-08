@@ -1,0 +1,155 @@
+.footer {
+    background: #2f303a;
+    padding: 60px 0px;
+  }
+ 
+  .footer .footer-contact {
+    position: relative;
+    display: block;
+    margin-right: 70px;
+  }
+  .footer .footer-contact li {
+    margin-bottom: 9px;
+  }
+
+  
+  .footer-contact .link {
+    color: rgba(255, 255, 255, 0.6);
+    @include font(14px, null, null, 1.71);
+    text-decoration: none;
+    &:hover, &:focus{
+      color: var(--accent-color);
+    }
+  }
+  .footer-general {
+    display: flex;
+    align-items: baseline;
+  }
+  .social-media p {
+    @include font(14px, 700, 0.03, 1.14);
+    margin-bottom: 20px;
+    color: var(--primary-white-color);
+  }
+  
+  .social-media .social-icons {
+    @extend %align-list;
+    padding: 0px;
+    margin: 0px;
+    justify-content: center;
+   
+    
+  }
+  
+  .social-media .social-link {
+    @extend %align-list;
+    padding: 0px;
+    margin-right: 10px;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, &:focus {
+      background-color: var(--accent-color);
+      color: var(--primary-white-color);
+      fill: var(--accent-color);
+      border-radius: 50%;
+    }
+  }
+  
+  .social-media .social-icon {
+    display: flex;
+    fill: var(--primary-white-color);
+    color: rgba(255, 255, 255, 0.1);
+  }
+  .social-media .social-link svg {
+    transition-property: background-color, color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+   &:focus{
+      background-color: var(--accent-color);
+      fill: var(--primary-white-color);
+    }
+  }
+
+  
+  .emai-section {
+    margin-left: 93px;
+  }
+  
+  .footer-general .email-text {
+    @include font(14px, 700, 0.03, 1.14);
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+    margin-bottom: 20px;
+  }
+  .email-invite {
+    position: relative;
+    display: flex;
+  }
+  .email-field{
+    @include font(14px, null, 0.03, 1.14);
+    color: var(--primary-white-color);
+  }
+  
+  .footer-general form input {
+    width: 358px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    padding-left: 16px;
+  }
+  
+  .footer-general form {
+    position: relative;
+    display: flex;
+   &::placeholder {
+    @include font(16px, null, 0.03, 1.25);
+      @extend %align-list;
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+  
+  
+  .email-button {
+    @extend %button;
+    height: 50px;
+    @include font(16px, 700, 0.06, 1.87);
+    @extend %align-list;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-left: 12px;
+    padding: 0px 28px;
+  }
+  .email-button[type="submit"] {
+    position: relative;
+    display: flex;
+  }
+  
+  .email-button svg {
+    margin-left: 10px;
+  }
+ 
+  
+  .footer-contact .link.adress {
+    color: var(--primary-white-color);
+    @include font(14px, null, null, 1.71);
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover, &:focus {
+      color: var(--accent-color);
+    }
+  }
+  
+  
