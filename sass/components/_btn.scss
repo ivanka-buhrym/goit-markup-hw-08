@@ -1,15 +1,15 @@
  /* Button */
  %button {
-    color: var(--primary-white-color);
-    background-color: var(--accent-color);
+    color: $white-color;
+    background-color: $accent-Color;
     font-family: Roboto;
     font-size: 16px;
     display: inline-block;
   }
   .button.primary {
     @extend %button;
-    color: var(--primary-white-color);
-    background-color: var(--accent-color);
+    color: $white-color;
+    background-color: $accent-Color;
     @include font(16px, 700, 0.06, 1.88);
     display: block;
     align-items: center;
@@ -17,25 +17,32 @@
     border-radius: 4px;
     min-width: 200px;
     padding: 10px 32px;
-    border: 1px solid var(--accent-color);
+    border: 1px solid $accent-Color;
     margin: 0 auto;
   }
-  .button.secondary {
+  .button-list__secondary {
     @extend %button;
-    color: var(--title-text-color);
+    color: $title-Color;
     background-color: #f5f4fa;
     border: 1px solid #f5f4fa;
     @include font(16px, 500, null, 1.62);
     text-align: center;
     border-radius: 4px;
     padding: 6px 22px;
+    margin-right: 8px;
     border: 1px solid transparent;
     &:hover, &:focus {
-    color: var(--primary-white-color);
-    background-color: var(--accent-color);
+    color: $white-color;
+    background-color: $accent-Color;
   }
+  transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, &:focus {
+      box-shadow: 0px 4px 4px 0px #00000040;
+    }
   }
-  .modal-form .submit {
+  .submit__button {
     @extend %button;
     width: 200px;
     height: 50px;
@@ -45,8 +52,4 @@
     border: none;
     @include font(16px, 700, 0.06, 1.87);
     }
-  .submit-button {
-    align-items: center;
-    text-align: center;
-  }
-  
+ 

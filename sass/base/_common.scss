@@ -3,9 +3,10 @@ button {
   }
 
   .body {
-    background-color: var(--primary-white-color);
-    color: var(--primary-text-color);
+    background-color: $white-color;
+    color: $primary-Color;
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
   }
- 
+  a:visited {text-decoration: none; 
+  }

@@ -2,7 +2,6 @@
 <html lang="ru">
 
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,208 +15,243 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/main.min.css" />
-
 </head>
 
 <body class="body">
-    <header class="header">
+    <header class="header ">
         <div class="container header-container">
-            <nav>
-                <div class="header-logo">
-                    <a href="./index.html" lang="en" class="logo">
-                        Web<span class="logo1">Studio</span>
-                    </a>
-                </div>
-                <ul class="site-nav list">
-                    <li class="header-item"><a href="./index.html" class="link">Студия</a></li>
-                    <li class="header-item"><a href="./portfolio.html" class="link current">Портфолио</a></li>
-                    <li class="header-item"><a href="" class="link">Контакты</a></li>
+            <nav class="header-container__nav logo">
+                <a href="./index.html" lang="en" class="logo__link">
+                    Web<span class="logo__link--black">Studio
+                    </span>
+                </a>
+                <ul class="header-container__site-nav site-nav list">
+                    <li class="site-nav__item">
+                        <a href="/index.html" class="link">
+                            Студия
+                        </a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="./portfolio.html" class="link current">
+                            Портфолио
+                        </a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="" class="link">
+                            Контакты
+                        </a>
+                    </li>
                 </ul>
             </nav>
-            <div class="contact-list">
-                <ul class="list contact">
-                    <li>
-                        <a href="mailto:info@devstudio.com" class="link mail-contact"><svg class="icon-mail" width="16"
-                                height="12">
-                                <use href="./images/sprite.svg#icon-envelope">
-                                </use>
-                            </svg>
-                            info@devstudio.com</a>
-                    </li>
-                    <li>
-
-                        <a href="telto:+380961111111" class="link phone-contact"> <svg class="icon-phone" width="16px"
-                                height="12px">
-                                <use href="./images/sprite.svg#icon-smartphone">
-                                </use>
-                            </svg>
-                            +38 096 111 11 11</a>
-                    </li>
-                </ul>
-            </div>
+            <ul class="header-container__contact-nav contact-nav list">
+                <li class="contact-nav__item item">
+                    <a href="mailto:info@devstudio.com" class="link item__mail-contact">
+                        <svg class="icon-mail" width="16" height="12">
+                            <use href="./images/sprite.svg#icon-envelope"/>
+                        </svg>
+                        info@devstudio.com
+                    </a>
+                </li>
+                <li class="contact-nav__item item">
+                    <a href="telto:+380961111111" class="link item__phone-contact">
+                        <svg class="icon-phone" width="16px" height="12px">
+                            <use href="./images/sprite.svg#icon-smartphone" />
+                        </svg>
+                        +38 096 111 11 11
+                    </a>
+                </li>
+            </ul>
         </div>
     </header>
 
     <main>
-
-        <section class="section section-item-04">
+        <section class="section portfolio">
             <div class="container">
-
                 <h1 class="visually-hidden">Портфолио</h1>
-
-                <!-- Фильтр проектов -->
-
-                <ul class="list button-list">
-                    <li> <button type="button" class="button secondary">Все</button></li>
-                    <li> <button type="button" class="button secondary">Веб-сайты</button></li>
-                    <li><button type="button" class="button secondary">Приложения</button></li>
-                    <li><button type="button" class="button secondary">Дизайн</button></li>
-                    <li><button type="button" class="button secondary">Маркетинг</button></li>
+                <ul class="list portfolio__button button-list">
+                    <li> <button type="button" class="button button-list__secondary">Все</button></li>
+                    <li> <button type="button" class="button button-list__secondary">Веб-сайты</button></li>
+                    <li><button type="button" class="button button-list__secondary">Приложения</button></li>
+                    <li><button type="button" class="button button-list__secondary">Дизайн</button></li>
+                    <li><button type="button" class="button button-list__secondary">Маркетинг</button></li>
                 </ul>
-
-                <!-- Все проекты -->
-
-                <ul class="list project-list">
-                    <li class="project-item">
-                        <a href="" class="link">
-                            <div class="project-img-wrap">
-                                <img src="./images/img1.jpg" alt="Ноутбук" width="370">
-                                <p class="project-text">
+                <ul class="list portfolio__project project">
+                    <li class="project__item">
+                        <a href="" class="project__link link">
+                            <div class="project__img-wrap">
+                                <img src="./images/img1.jpg" alt="Ноутбук" width="370" class="project__img">
+                                <p class="project__text">
                                     Технокряк это современная площадка распространения коронавируса. Компании используют
                                     эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов
                                 </p>
                             </div>
-                            <div class="card-description">
-                                <h3 class="title">Технокряк</h3>
-                                <p class="text">Веб-сайт</p>
+                            <div class="project__card-description card-description">
+                                <h3 class="card-description__title title">
+                                    Технокряк
+                                </h3>
+                                <p class="card-description__text">
+                                    Веб-сайт
+                                </p>
                             </div>
                         </a>
                     </li>
-                    <li class="project-item">
-                        <a href="" class="link">
-                            <div class="project-img-wrap">
-                                <img src="./images/img2.jpg" alt="Двое мужчин" width="370">
-                                <p class="project-text">
+                    <li class="project__item">
+                        <a href="" class="project__link link">
+                            <div class="project__img-wrap">
+                                <img src="./images/img2.jpg" alt="Двое мужчин" width="370" class="project__img">
+                                <p class="project__text">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ad, impedit
                                     incidunt odio blanditiis suscipit quo cumque nisi commodi perspiciatis asperiores
                                     laudantium voluptatem ut omnis ipsam facilis.
                                 </p>
                             </div>
-                            <div class="card-description">
-                                <h3 class="title">Постер New Orlean vs Golden Star</h3>
-                                <p class="text">Дизайн</p>
+                            <div class="project__card-description card-description">
+                                <h3 class="card-description__title title">
+                                    Постер New Orlean vs Golden Star
+                                </h3>
+                                <p class="card-description__text">
+                                    Дизайн
+                                </p>
                             </div>
                         </a>
                     </li>
-                    <li class="project-item">
-                        <a href="" class="link">
-                            <div class="project-img-wrap">
-                                <img src="./images/img3.jpg" alt="Лого ресторана" width="370">
-                                <p class="project-text">
+                    <li class="project__item">
+                        <a href="" class="project__link link">
+                            <div class="project__img-wrap">
+                                <img src="./images/img3.jpg" alt="Лого ресторана" width="370" class="project__img">
+                                <p class="project__text">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ad, impedit
                                     incidunt odio blanditiis suscipit quo cumque nisi commodi perspiciatis asperiores
                                     laudantium voluptatem ut omnis ipsam facilis.
                                 </p>
                             </div>
-                            <div class="card-description">
-                                <h3 class="title">Ресторан Seafood</h3>
-                                <p class="text">Приложение</p>
+                            <div class="project__card-description card-description">
+                                <h3 class="card-description__title title">
+                                    Ресторан Seafood
+                                </h3>
+                                <p class="card-description__text">
+                                    Приложение
+                                </p>
                             </div>
                         </a>
                     </li>
-                    <li class="project-item">
-                        <a href="" class="link">
-                            <div class="project-img-wrap">
-                                <img src="./images/img4.jpg" alt="Наушники" width="370">
-                                <p class="project-text">
+                    <li class="project__item">
+                        <a href="" class="project__link link">
+                            <div class="project__img-wrap">
+                                <img src="./images/img4.jpg" alt="Наушники" width="370" class="project__img">
+                                <p class="project__text">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ad, impedit
                                     incidunt odio blanditiis suscipit quo cumque nisi commodi perspiciatis asperiores
                                     laudantium voluptatem ut omnis ipsam facilis.
                                 </p>
                             </div>
-                            <div class="card-description">
-                                <h3 class="title">Проект Prime</h3>
-                                <p class="text">Маркетинг</p>
+                            <div class="project__card-description card-description">
+                                <h3 class="card-description__title title">
+                                    Проект Prime
+                                </h3>
+                                <p class="card-description__text">
+                                    Маркетинг
+                                </p>
                             </div>
                         </a>
                     </li>
-                    <li class="project-item">
-                        <a href="" class="link">
-                            <div class="project-img-wrap">
-                                <img src="./images/img5.jpg" alt="Две коробки" width="370">
-                                <p class="project-text">
+                    <li class="project__item">
+                        <a href="" class="project__link link">
+                            <div class="project__img-wrap">
+                                <img src="./images/img5.jpg" alt="Две коробки" width="370" class="project__img">
+                                <p class="project__text">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ad, impedit
                                     incidunt odio blanditiis suscipit quo cumque nisi commodi perspiciatis asperiores
                                     laudantium voluptatem ut omnis ipsam facilis.
                                 </p>
                             </div>
-                            <div class="card-description">
-                                <h3 class="title">Проект Boxes</h3>
-                                <p class="text">Приложение</p>
+                            <div class="project__card-description card-description">
+                                <h3 class="card-description__title title">
+                                    Проект Boxes
+                                </h3>
+                                <p class="card-description__text">
+                                    Приложение
+                                </p>
                             </div>
                         </a>
                     </li>
-                    <li class="project-item">
-                        <a href="" class="link">
-                            <div class="project-img-wrap">
-                                <img src="./images/img6.jpg" alt="Монитор" width="370">
-                                <p class="project-text">
+                    <li class="project__item">
+                        <a href="" class="project__link link">
+                            <div class="project__img-wrap">
+                                <img src="./images/img6.jpg" alt="Монитор" width="370" class="project__img">
+                                <p class="project__text">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ad, impedit
                                     incidunt odio blanditiis suscipit quo cumque nisi commodi perspiciatis asperiores
                                     laudantium voluptatem ut omnis ipsam facilis.
                                 </p>
                             </div>
-                            <div class="card-description">
-                                <h3 class="title">Inspiration has no Borders</h3>
-                                <p class="text">Веб-сайт</p>
+                            <div class="project__card-description card-description">
+                                <h3 class="card-description__title title">
+                                    Inspiration has no Borders
+                                </h3>
+                                <p class="card-description__text">
+                                    Веб-сайт
+                                </p>
                             </div>
                         </a>
                     </li>
-                    <li class="project-item">
-                        <a href="" class="link">
-                            <div class="project-img-wrap">
-                                <img src="./images/img7.jpg" alt="Журнал" width="370">
-                                <p class="project-text">
+                    <li class="project__item">
+                        <a href="" class="project__link link">
+                            <div class="project__img-wrap">
+                                <img src="./images/img7.jpg" alt="Журнал" width="370" class="project__img">
+                                <p class="project__text">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ad, impedit
                                     incidunt odio blanditiis suscipit quo cumque nisi commodi perspiciatis asperiores
                                     laudantium voluptatem ut omnis ipsam facilis.
                                 </p>
                             </div>
-                            <div class="card-description">
-                                <h3 class="title">Издание Limited Edition</h3>
-                                <p class="text">Дизайн</p>
+                            <div class="project__card-description card-description">
+                                <h3 class="card-description__title title">
+                                    Издание Limited Edition
+                                </h3>
+                                <p class="card-description__text">
+                                    Дизайн
+                                </p>
                             </div>
                         </a>
                     </li>
-                    <li class="project-item">
-                        <a href="" class="link">
-                            <div class="project-img-wrap">
-                                <img src="./images/img8.jpg" alt="Лейбл" width="370">
-                                <p class="project-text">
+                    <li class="project__item">
+                        <a href="" class="project__link link">
+                            <div class="project__img-wrap">
+                                <img src="./images/img8.jpg" alt="Лейбл" width="370" class="project__img">
+                                <p class="project__text">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ad, impedit
                                     incidunt odio blanditiis suscipit quo cumque nisi commodi perspiciatis asperiores
                                     laudantium voluptatem ut omnis ipsam facilis.
                                 </p>
                             </div>
-                            <div class="card-description">
-                                <h3 class="title">Проект LAB</h3>
-                                <p class="text">Маркетинг</p>
+                            <div class="project__card-description card-description">
+                                <h3 class="card-description__title title">
+                                    Проект LAB
+                                </h3>
+                                <p class="card-description__text">
+                                    Маркетинг
+                                </p>
                             </div>
                         </a>
                     </li>
-                    <li class="project-item">
-                        <a href="" class="link">
-                            <div class="project-img-wrap">
-                                <img src="./images/img9.jpg" alt="Ноутбук" width="370">
-                                <p class="project-text">
+                    <li class="project__item">
+                        <a href="" class="project__link link">
+                            <div class="project__img-wrap">
+                                <img src="./images/img9.jpg" alt="Ноутбук" width="370" class="project__img">
+                                <p class="project__text">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ad, impedit
                                     incidunt odio blanditiis suscipit quo cumque nisi commodi perspiciatis asperiores
                                     laudantium voluptatem ut omnis ipsam facilis.
                                 </p>
                             </div>
-                            <div class="card-description">
-                                <h3 class="title">Growing Business</h3>
-                                <p class="text">Приложение</p>
+                            <div class="project__card-description card-description">
+                                <h3 class="card-description__title title">
+                                    Growing Business
+                                </h3>
+                                <p class="card-description__text">
+                                    Приложение
+                                </p>
                             </div>
                         </a>
                     </li>
@@ -231,56 +265,65 @@
     </main>
 
     <!--Футер-->
-    <!--Футер-->
     <footer class="footer">
-
-        <div class="container footer-general">
-
-            <div class="footer-contacts">
-
-                <div class="logo">
-                    <a href="./index.html" lang="en" class="logo">
-                        Web<span class="logo-footer">Studio</span>
+        <div class="container footer__general">
+            <div class="footer__contacts">
+                <div class="footer__logo logo">
+                    <a href="./index.html" lang="en" class="logo__link">
+                        Web<span class="logo__link--white">Studio</span>
                     </a>
                 </div>
                 <address>
-                    <ul class="list footer-contact">
-                        <li> <a href="https://goo.gl/maps/sV1DjzKFQDHYwnPr9" class="link adress">г. Киев, пр-т Леси
-                                Украинки, 26
-                            </a></li>
-                        <li> <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a> </li>
-                        <li> <a href="telto:+380961111111" class="link">+38 096 111 11 11</a> </li>
+                    <ul class="list footer__contact-list contact-list ">
+                        <li class="contact-list__items"> 
+                            <a href="https://goo.gl/maps/sV1DjzKFQDHYwnPr9" 
+                            class="link contact-list__adress contact-list__link">
+                            г. Киев, пр-т Леси Украинки, 26
+                            </a>
+                        </li>
+                        <li class="contact-list__items"> 
+                            <a href="mailto:info@devstudio.com" 
+                            class="link contact-list__link">
+                            info@devstudio.com
+                        </a>
+                     </li>
+                        <li class="contact-list__items"> 
+                            <a href="telto:+380961111111" 
+                            class="link contact-list__link">
+                                +38 096 111 11 11
+                            </a> 
+                        </li>
                     </ul>
                 </address>
             </div>
 
-            <div class="social-media">
-                <p>ПРИСОЕДИНЯЙТЕСЬ</p>
-                <ul class="social-icons">
-                    <li class="social-items">
-                        <a href="" class="social-link">
-                            <svg class="social-icon" width="20" height="20">
+            <div class="footer__social-media social-media">
+                <p class="social-media__text">ПРИСОЕДИНЯЙТЕСЬ</p>
+                <ul class="social-media__icons">
+                    <li class="social-media__items">
+                        <a href="" class="social-media__link social-link">
+                            <svg class="social-media__icon social-icon" width="20" height="20">
                                 <use href="./images/sprite.svg#icon-instagram"> </use>
                             </svg>
                         </a>
                     </li>
-                    <li class="social-items">
-                        <a href="" class="social-link">
-                            <svg class="social-icon" width="20" height="20">
+                    <li class="social-media__items">
+                        <a href="" class="social-media__link social-link">
+                            <svg class="social-media__icon social-icon" width="20" height="20">
                                 <use href="./images/sprite.svg#icon-twitter"> </use>
                             </svg>
                         </a>
                     </li>
-                    <li class="social-items">
-                        <a href="" class="social-link">
-                            <svg class="social-icon" width="20" height="20">
+                    <li class="social-media__items">
+                        <a href="" class="social-media__link social-link">
+                            <svg class="social-media__icon social-icon" width="20" height="20">
                                 <use href="./images/sprite.svg#icon-facebook"> </use>
                             </svg>
                         </a>
                     </li>
-                    <li class="social-items">
-                        <a href="" class="social-link">
-                            <svg class="social-icon" width="20" height="20">
+                    <li class="social-media__items">
+                        <a href="" class="social-media__link social-link">
+                            <svg class="social-media__icon social-icon" width="20" height="20">
                                 <use href="./images/sprite.svg#icon-linkedin">
                                 </use>
                             </svg>
@@ -290,8 +333,34 @@
 
             </div>
 
+            <div class="footer__emai-section emai-section">
+                <p class="emai-section__text">
+                    Подпишитесь на рассылку
+                </p>
+                <div class="emai-section__invite">
+                    <form action="#" method="post">
+                        <input 
+                        type="email" 
+                        name="email" 
+                        placeholder="E-mail" 
+                        required value="" 
+                        minlength="5"
+                        maxlength="50" 
+                        class="emai-section__field">
+                    </form>
+                    <button type="submit" class="button emai-section__email-button">
+                        Подписаться
+                        <svg>
+                            <use href="./images/sprite.svg#icon-send" width="24" heigth="24">
+                            </use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+
         </div>
-        </div>
+
     </footer>
 
 </body>

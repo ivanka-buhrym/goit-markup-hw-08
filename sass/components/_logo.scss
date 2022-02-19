@@ -1,5 +1,16 @@
-.logo {
-    color: var(--accent-color);
+.logo__link {
+    color: $accent-Color;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    align-items: center;
+    margin-right: 93px;
+  }
+  .logo__link--black {
+    color: $title-Color;
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -7,22 +18,13 @@
     letter-spacing: 0.03em;
     text-decoration: none;
   }
-  .logo1 {
-    color: var(--title-text-color);
-    font-family: Raleway, sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    text-decoration: none;
-  }
-
-  .footer .logo {
+  
+  .footer-contacts__logo {
     margin-bottom: 20px;
   }
 
-  .logo-footer {
-    color: var(--primary-white-color);
+  .logo__link--white {
+    color: $white-color;
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;

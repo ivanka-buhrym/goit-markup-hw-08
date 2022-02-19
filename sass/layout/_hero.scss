@@ -1,17 +1,17 @@
 .hero {
     text-align: center;
   }
-  .hero-title {
-    color: var(--primary-white-color);
+  .hero__title {
+    color: $white-color;
     @include font(44px, 900, 0.06, 1.36);
     margin-bottom: 30px;
   }
-  .hero-container {
+  .hero__container {
     padding: 200px 0px;
     align-items: center;
   }
   
-  .overlay {
+  .hero__overlay {
     max-width: 1600px;
     height: 600;
     margin-left: auto;
