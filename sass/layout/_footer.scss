@@ -4,16 +4,22 @@
 }
 .footer__general {
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
+  justify-content: center;
 }
 .footer__logo {
   margin-bottom: 20px;
 }
 // Contacts
+.footer__contacts{
+  margin-bottom: 60px;
+}
 .footer__contact-list {
   position: relative;
   display: block;
   margin-right: 70px;
+  
 }
 .contact-list__items {
   margin-bottom: 9px;
@@ -41,6 +47,10 @@
   }
 }
 // Social media
+.footer__social-media{
+  margin-bottom: 60px;
+  margin-right: 93px;
+}
 .social-media__text {
   @include font(14px, 700, 0.03, 1.14);
   margin-bottom: 20px;
@@ -88,7 +98,9 @@
 }
 // Email-section
 .footer__emai-section {
-  margin-left: 93px;
+
+  justify-content: center;
+  // margin-left: 93px;
 }
 .emai-section__text {
   @include font(14px, 700, 0.03, 1.14);
@@ -99,12 +111,15 @@
 .emai-section__invite {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .emai-section__field {
   @include font(14px, null, 0.03, 1.14);
   color: $white-color;
   position: relative;
   display: flex;
+  margin-bottom: 20px;
   &::placeholder {
     @include font(16px, null, 0.03, 1.25);
     @extend %align-list;

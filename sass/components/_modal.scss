@@ -9,7 +9,7 @@
 }
 .backdrop.is-hidden {
   visibility: hidden;
-  display: none; 
+  // display: none; 
   opacity: 0;
   pointer-events: none;
   .modal {
@@ -31,6 +31,7 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   @media screen and (min-width: 1200px) {
     width: 528px;
+    min-height: 581px;
   }
 }
 .modal__close {
@@ -140,9 +141,7 @@
   margin-top: 10px;
   padding-bottom: 4px;
 }
-// .modal__check-field{
-//   display: flex;
-// }
+
 .modal__check-text {
   display: inline;
   @include font(12px, null, 0.03, 1.17);
@@ -154,7 +153,9 @@
     height: 15px;
     border: 2px solid $title-Color;
     border-radius: 2px;
-    margin-right: 7px;
+    margin-right: 4px;
+    @media screen and (min-width: 1200px) {
+      margin-right: 7px;}
   }
   .modal__check:checked + &::before {
     background-color: $accent-Color;
@@ -164,6 +165,8 @@
   }
   @media screen and (min-width: 1200px) { 
     @include font(14px, null, null, 1.71);}
+    
+  
 }
 .modal__check-link {
   display: inline;

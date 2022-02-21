@@ -3,12 +3,18 @@
   }
   .hero__title {
     color: $white-color;
-    @include font(44px, 900, 0.06, 1.36);
+    @include font(26px, 900, 0.06, 1.62);
     margin-bottom: 30px;
+    @media screen and (min-width: 1200px) {
+      @include font(44px, null, null, 1.36);
+    }
   }
   .hero__container {
-    padding: 200px 0px;
+    // padding: 200px 0px;
     align-items: center;
+    padding: 118px 0px;
+    @media screen and (min-width: 1200px) {padding: 200px 0px;
+    }
   }
   
   .hero__overlay {
