@@ -15,10 +15,13 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+ 
 </head>
 
 <body class="body">
-    <header class="header ">
+    <!-- <header class="header ">
         <div class="container header-container">
             <nav class="header-container__nav logo">
                 <a href="./index.html" lang="en" class=" logo__link">
@@ -58,7 +61,7 @@
             </ul>
 
         </div>
-    </header>
+    </header> -->
     <main>
         <!--Банер-->
         <section class="hero hero__overlay">
@@ -139,7 +142,7 @@
             </div>
         </section>
         <!--Чем мы занимаемся-->
-        <section class="section speciality">
+        <!-- <section class="section speciality">
             <div class="container">
                 <h2 class="speciality__title section-title">Чем мы занимаемся</h2>
                 <ul class="list speciality__list">
@@ -165,7 +168,7 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
         <!-- Наша команда-->
         <section class="section team">
@@ -336,46 +339,46 @@
             </div>
         </section>
         <!-- Наши клиенты -->
-        <section class="section clients">
+         <section class="section clients"> 
             <div class="container">
                 <h2 class="section-title">Постоянные клиенты</h2>
                 <ul class="list clients__list">
-                    <li>
+                    <li class="clients__item">
                         <a href="" class="clients__logo">
                             <svg class="clients__icon" width="106px" height="60px">
                                 <use href="./images/sprite.svg#icon-logo1"> </use>
                             </svg>
                         </a>
                     </li>
-                    <li>
+                    <li class="clients__item">
                         <a href="" class="clients__logo">
                             <svg class="clients__icon" width="106px" height="60px">
                                 <use href="./images/sprite.svg#icon-logo2"> </use>
                             </svg>
                         </a>
                     </li>
-                    <li>
+                    <li class="clients__item">
                         <a href="" class="clients__logo">
                             <svg class="clients__icon" width="106px" height="60px">
                                 <use href="./images/sprite.svg#icon-logo3"> </use>
                             </svg>
                         </a>
                     </li>
-                    <li>
+                    <li class="clients__item">
                         <a href="" class="clients__logo">
                             <svg class="clients__icon" width="106px" height="60px">
                                 <use href="./images/sprite.svg#icon-logo4"> </use>
                             </svg>
                         </a>
                     </li>
-                    <li>
+                    <li class="clients__item">
                         <a href="" class="clients__logo">
                             <svg class="clients__icon" width="106px" height="60px">
                                 <use href="./images/sprite.svg#icon-logo5"> </use>
                             </svg>
                         </a>
                     </li>
-                    <li>
+                    <li class="clients__item">
                         <a href="" class="clients__logo">
                             <svg class="clients__icon" width="106px" height="60px">
                                 <use href="./images/sprite.svg#icon-logo6"> </use>
@@ -384,10 +387,10 @@
                     </li>
                 </ul>
 
-        </section>
+        </section> 
     </main>
     <!--Футер-->
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container footer__general">
             <div class="footer__contacts">
                 <div class="footer__logo logo">
@@ -475,7 +478,7 @@
 
         </div>
 
-    </footer>
+    </footer> -->
     <!-- Модальное окно -->
     <div class="backdrop is-hidden" data-modal>
         <div class="backdrop__modal modal">
@@ -536,7 +539,7 @@
                             class="modal__text"></textarea>
 
                     </div>
-                    <div class="modal__field">
+                    <div class="modal__field modal__check-field">
                         <input type="checkbox" id="policy" name="policy" class="modal__check visually-hidden" />
                         <label for="policy" class="modal__check-text">
                             Соглашаюсь с рассылкой и принимаю

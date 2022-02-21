@@ -41,6 +41,12 @@
     &:hover, &:focus {
       box-shadow: 0px 4px 4px 0px #00000040;
     }
+    margin-bottom: 15px;
+    @media screen and (min-width: 768px) { 
+      margin-bottom: 0px;}
+    @media screen and (min-width: 1200px) { 
+      margin-bottom: 0px;}
+    
   }
   .submit__button {
     @extend %button;
