@@ -8,9 +8,7 @@
  
  }}
 .team__list {
-  // position: relative;
-  // display: flex;
- 
+
   @media screen and (min-width: 768px) { 
     position: relative;
     display: flex;
@@ -31,10 +29,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background: $white-color;
-  @media screen and (min-width: 480px) { 
-    margin-right: 30px;
-    width: calc(100% / 1 - 30px);
-  }
+ 
   @media screen and (min-width: 768px) { 
     margin-right: 30px;
     width: calc(100% / 2 - 30px);

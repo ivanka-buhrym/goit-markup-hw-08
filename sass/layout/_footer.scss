@@ -1,6 +1,7 @@
 .footer {
   background: #2f303a;
-  padding: 60px 0px;
+  padding-top: 60px;
+  padding-bottom: auto;
   
 }
 .footer__general {
@@ -28,7 +29,7 @@
   display: block;
   margin-bottom: 60px;
   @media screen and (min-width: 1200px) {
-    margin-right: 70px;
+    margin-right: 0px;
   }
 }
 .contact-list__items {
@@ -63,6 +64,9 @@
 // Social media
 .footer__social-media{
   margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 0px;
+  }
 
 }
 .social-media__text {
@@ -118,6 +122,9 @@
 .footer__emai-section {
   text-align: center;
   justify-content: center;
+  margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0px}
 }
 .emai-section__text {
   @include font(14px, 700, 0.03, 1.14);
