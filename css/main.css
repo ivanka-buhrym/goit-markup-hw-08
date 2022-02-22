@@ -755,6 +755,12 @@ a:visited {
   line-height: 1.22;
   color: #2196F3;
   text-decoration: none;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.mobile-soc-media__item::not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .mob-menu__close {
@@ -788,12 +794,6 @@ a:visited {
   letter-spacing: 0.02;
   line-height: 1.22;
   color: #2196F3;
-  padding-right: 10px;
-  padding-left: 10px;
-}
-
-.mobile-soc-media__link::not(:last-child) {
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .hero {
@@ -858,15 +858,8 @@ a:visited {
   text-align: center;
 }
 
-@media screen and (min-width: 768px) {
-  .feature {
-    margin-right: -30px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .feature {
-    margin-right: -30px;
     padding: 94px 0px;
   }
 }
@@ -1008,34 +1001,11 @@ a:visited {
   background: #f5f4fa;
   padding: 60px 0px;
   text-align: center;
-  margin-right: -30px;
-}
-
-@media screen and (min-width: 480px) {
-  .team {
-    margin-right: -30px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .team {
-    margin-right: -30px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
   .team {
-    margin-right: -30px;
     padding: 94px 0px;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .team__list {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -30px;
   }
 }
 
@@ -1136,15 +1106,8 @@ a:visited {
   text-align: center;
 }
 
-@media screen and (min-width: 768px) {
-  .clients {
-    margin-right: -30px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .clients {
-    margin-right: -30px;
     padding: 94px 0px;
   }
 }
@@ -1240,21 +1203,8 @@ a:visited {
   text-align: center;
 }
 
-@media screen and (min-width: 480px) {
-  .portfolio {
-    margin-right: -30px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .portfolio {
-    margin-right: -30px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .portfolio {
-    margin-right: -30px;
     padding: 94px 0px;
   }
 }
@@ -1302,7 +1252,6 @@ a:visited {
 .project__item {
   position: relative;
   margin-top: 30px;
-  flex-basis: calc((100% - 90px) / 1);
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1314,7 +1263,7 @@ a:visited {
 
 @media screen and (min-width: 480px) {
   .project__item {
-    width: calc(100% / 1 - 30px);
+    width: 100%;
   }
 }
 
@@ -1383,12 +1332,14 @@ a:visited {
   letter-spacing: 0.06;
   line-height: 2;
   margin-bottom: 4px;
+  text-align: left;
 }
 
 .card-description__text {
   font-size: 16px;
   line-height: 1.87;
   color: #757575;
+  text-align: left;
 }
 
 .footer {

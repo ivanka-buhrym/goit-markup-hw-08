@@ -2,14 +2,9 @@
 .portfolio {
   padding: 60px 0px;
   text-align: center;
-  @media screen and (min-width: 480px) { 
-   margin-right: -30px;
- }
- @media screen and (min-width: 768px) { 
-   margin-right: -30px;
- }
+ 
  @media screen and (min-width: 1200px) { 
-   margin-right: -30px;
+
    padding: 94px 0px;
  
  }
@@ -42,7 +37,6 @@
 .project__item {
   position: relative;
   margin-top: 30px;
-  flex-basis: calc((100% - 90px) / 1);
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -51,7 +45,7 @@
     box-shadow: 0px 4px 4px 0px #00000040;
   }
   @media screen and (min-width: 480px){ 
-    width: calc(100% / 1 - 30px);
+    width: 100%;
     
   }
   @media screen and (min-width: 768px) { 
@@ -103,8 +97,10 @@
   color: $title-Color;
   @include font(18px, 700, 0.06, 2);
   margin-bottom: 4px;
+  text-align: left;
 }
 .card-description__text {
   @include font(16px, null, null, 1.87);
   color: #757575;
+  text-align: left;
 }

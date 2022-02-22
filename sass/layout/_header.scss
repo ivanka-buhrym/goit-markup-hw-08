@@ -249,6 +249,11 @@ text-decoration: none;
 @include font(18px, 500, 0.02, 1.22);
 color: #2196F3;
 text-decoration: none;
+padding-right: 10px;
+padding-left: 10px;
+&::not(:last-child){
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
 }
 
 .mob-menu__close {
@@ -278,9 +283,5 @@ text-decoration: none;
   text-decoration: none;
   @include font(18px, 500, 0.02, 1.22);
 color: #2196F3;
-padding-right: 10px;
-padding-left: 10px;
-&::not(:last-child){
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
-}
+
 }

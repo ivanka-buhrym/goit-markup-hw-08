@@ -1,32 +1,16 @@
 .team {
-  // padding: 94px 0px;
-  // margin-left: 0;
-  // margin-right: 0;
-  
+ 
   background: #f5f4fa;
   padding: 60px 0px;
   text-align: center;
-  margin-right: -30px;
-  @media screen and (min-width: 480px) { 
-   margin-right: -30px;
- }
- @media screen and (min-width: 768px) { 
-   margin-right: -30px;
- }
  @media screen and (min-width: 1200px) { 
-   margin-right: -30px;
    padding: 94px 0px;
  
  }}
 .team__list {
   // position: relative;
   // display: flex;
-  @media screen and (min-width: 480px) { 
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -30px;
-  }
+ 
   @media screen and (min-width: 768px) { 
     position: relative;
     display: flex;
