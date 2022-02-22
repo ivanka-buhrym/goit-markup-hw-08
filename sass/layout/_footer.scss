@@ -5,24 +5,32 @@
 .footer__general {
   display: flex;
   flex-wrap: wrap;
-  align-items: baseline;
   justify-content: center;
 }
 .footer__logo {
   margin-bottom: 20px;
+  
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: justify;
+  }
 }
 // Contacts
 .footer__contacts{
   margin-bottom: 60px;
+  
 }
 .footer__contact-list {
   position: relative;
   display: block;
   margin-right: 70px;
-  
 }
 .contact-list__items {
   margin-bottom: 9px;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align:justify;
+  }
 }
 .contact-list__link {
   color: rgba(255, 255, 255, 0.6);
@@ -50,11 +58,17 @@
 .footer__social-media{
   margin-bottom: 60px;
   margin-right: 93px;
+
+
 }
 .social-media__text {
   @include font(14px, 700, 0.03, 1.14);
   margin-bottom: 20px;
   color: $white-color;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align:justify;
+  }
 }
 .social-media__icons {
   @extend %align-list;
@@ -98,15 +112,18 @@
 }
 // Email-section
 .footer__emai-section {
-
+  text-align: center;
   justify-content: center;
-  // margin-left: 93px;
 }
 .emai-section__text {
   @include font(14px, 700, 0.03, 1.14);
   text-transform: uppercase;
   color: $white-color;
   margin-bottom: 20px;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align:justify;
+  }
 }
 .emai-section__invite {
   position: relative;

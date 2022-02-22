@@ -1,35 +1,52 @@
 .hero {
-    text-align: center;
+  text-align: center;
+  align-items: center;
+  max-width: 480px;
+  height: 400px;
+  @include tab {
+    max-width: 768px;
   }
-  .hero__title {
-    color: $white-color;
-    @include font(26px, 900, 0.06, 1.62);
-    margin-bottom: 30px;
-    @media screen and (min-width: 1200px) {
-      @include font(44px, null, null, 1.36);
-    }
-  }
-  .hero__container {
-    // padding: 200px 0px;
-    align-items: center;
-    padding: 118px 0px;
-    @media screen and (min-width: 1200px) {padding: 200px 0px;
-    }
-  }
-  
-  .hero__overlay {
+  @include desk {
     max-width: 1600px;
-    height: 600;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #2f303a;
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url("../images/team.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    height: 600px;}
+}
+.hero__title {
+  color: $white-color;
+  @include font(26px, 900, 0.06, 1.62);
+  margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    @include font(44px, null, null, 1.36);
   }
+}
+.hero__container {
+  // padding: 200px 0px;
+  align-items: center;
+  padding: 118px 0px;
+  @media screen and (min-width: 1200px) {
+    padding: 200px 0px;
+  }
+}
+
+.hero__overlay {
+ 
+  // height: 600;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #2f303a;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/desktop/hero-1200@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  // @include tab {
+  //   max-width: 768px;
+  // }
+  // @include desk {
+  //   max-width: 1600px;
+  //   height: 600px;
+  // }
+}
