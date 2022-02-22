@@ -1,33 +1,39 @@
 .footer {
   background: #2f303a;
   padding: 60px 0px;
+  
 }
 .footer__general {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
 }
 .footer__logo {
   margin-bottom: 20px;
-  
   text-align: center;
   @media screen and (min-width: 1200px) {
     text-align: justify;
   }
+
 }
 // Contacts
 .footer__contacts{
+  text-align: center;
+  justify-content: center;
   margin-bottom: 60px;
+  margin-right: 20px;
   
 }
 .footer__contact-list {
   position: relative;
   display: block;
-  margin-right: 70px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 }
 .contact-list__items {
   margin-bottom: 9px;
-  text-align: center;
+  text-align: center; 
   @media screen and (min-width: 1200px) {
     text-align:justify;
   }
@@ -57,8 +63,6 @@
 // Social media
 .footer__social-media{
   margin-bottom: 60px;
-  margin-right: 93px;
-
 
 }
 .social-media__text {
@@ -129,8 +133,14 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  @media screen and (min-width: 1200px) {
+    flex-direction:row ;
+  }
 }
+
 .emai-section__field {
   @include font(14px, null, 0.03, 1.14);
   color: $white-color;

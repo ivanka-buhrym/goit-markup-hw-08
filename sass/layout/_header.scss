@@ -21,13 +21,14 @@
 .header-container__site-nav {
   position: relative;
   // display: flex;
-  margin-right: -50px;
+  // margin-left: -50px;
   display: none;
   @media screen and (min-width: 768px){
     display: flex;    
   }
   @media screen and (min-width: 1200px){
-    display: flex;    
+    display: flex;  
+    margin-left: -50px;  
   }
 }
 .site-nav__item {
@@ -35,8 +36,8 @@
   color: $title-Color;
   @include font(14px, 500, 0.02em, 1.14);
   text-decoration: none;
-
   margin-left: 50px;
+
   .link {
     text-decoration: none;
     color: $title-Color;
@@ -173,11 +174,11 @@
 }
 
 .open-menu-btn{
-  display: block;
-  margin-left: auto;
+display: block;
+margin-left: auto;
 background-color: transparent;
 border: none;
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   display: none;
 }
 @media screen and (min-width: 1200px){

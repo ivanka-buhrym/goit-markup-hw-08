@@ -161,10 +161,17 @@ a:visited {
 .section-title {
   color: #212121;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.67;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   margin-bottom: 50px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+    line-height: 1.67;
+  }
 }
 
 .logo__link {
@@ -176,7 +183,12 @@ a:visited {
   letter-spacing: 0.03em;
   text-decoration: none;
   align-items: center;
-  margin-right: 93px;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo__link {
+    margin-right: 93px;
+  }
 }
 
 .logo__link--black {
@@ -474,7 +486,6 @@ a:visited {
 
 .header-container__site-nav {
   position: relative;
-  margin-right: -50px;
   display: none;
 }
 
@@ -487,6 +498,7 @@ a:visited {
 @media screen and (min-width: 1200px) {
   .header-container__site-nav {
     display: flex;
+    margin-left: -50px;
   }
 }
 
@@ -648,7 +660,7 @@ a:visited {
   border: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .open-menu-btn {
     display: none;
   }
@@ -890,6 +902,7 @@ a:visited {
 
 .feature-list__item {
   text-align: start;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 480px) {
@@ -1189,7 +1202,7 @@ a:visited {
 }
 
 .clients__logo {
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
@@ -1203,6 +1216,18 @@ a:visited {
 .clients__logo:hover, .clients__logo:focus {
   border: 1px solid #2196f3;
   fill: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .clients__logo {
+    width: 226px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients__logo {
+    width: 170px;
+  }
 }
 
 .clients__item {
@@ -1360,6 +1385,7 @@ a:visited {
 
 .project__text {
   position: absolute;
+  text-align: left;
   bottom: 0;
   left: 0;
   color: #fff;
@@ -1408,7 +1434,7 @@ a:visited {
 .footer__general {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .footer__logo {
@@ -1423,13 +1449,21 @@ a:visited {
 }
 
 .footer__contacts {
+  text-align: center;
+  justify-content: center;
   margin-bottom: 60px;
+  margin-right: 20px;
 }
 
 .footer__contact-list {
   position: relative;
   display: block;
-  margin-right: 70px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__contact-list {
+    margin-right: 70px;
+  }
 }
 
 .contact-list__items {
@@ -1471,7 +1505,6 @@ a:visited {
 
 .footer__social-media {
   margin-bottom: 60px;
-  margin-right: 93px;
 }
 
 .social-media__text {
@@ -1556,7 +1589,15 @@ a:visited {
   position: relative;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .emai-section__invite {
+    flex-direction: row;
+  }
 }
 
 .emai-section__field {
