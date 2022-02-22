@@ -74,7 +74,7 @@
             <div class="container">
                 <div class="mob-menu-list">
                     <button type="button" class="mob-menu__close" mob-menu-close >
-                        <svg class="mob__icon-vector" width="40" heigth="40">
+                        <svg class="mob__icon-vector" width="19" heigth="19">
                             <use href="./images/sprite.svg#icon-vector">
                             </use>
                         </svg>
@@ -216,9 +216,25 @@
                 <ul class="list speciality__list">
                     <li class="speciality__item">
                         <div class="speciality__img-wrap">
-                            
+                            <picture>
+                                <source
+                                srcset="
+                                ./images/desktop/whattodo-1-1200@1x.jpg  1x,
+                                ./images/desktop/whattodo-1-1200@2x.jpg   2x 
+                                "
+                                media="(min-width: 1200px)"
+                                type="img/webp"
+                                />
+                                <source
+                                srcset="
+                                ./images/desktop/whattodo-1-1200@1x.jpg  1x,
+                                ./images/desktop/whattodo-1-1200@2x.jpg   2x 
+                                "
+                                media="(min-width: 1200px)"
+                                />
+                              
                                 <img src="./images/desktop/whattodo-1-1200@1x.jpg" alt="Планшет и клавиатура" width="370">
-                          
+                            </picture>
                             <p class="speciality__text">
                                 Десктопные приложения
                             </p>
@@ -226,10 +242,23 @@
                     </li>
                     <li class="speciality__item">
                         <picture>
-                            <source srcset="
-                            ./images/desktop-1x/box2.jpg 1x,
-                            ./images/desktop-2x/box2-desktop-2x 2x
-                            " media="min-wight: 1200px)" />
+                            <source
+                            srcset="
+                            ./images/desktop/whattodo-2-1200@1x.jpg  1x,
+                            ./images/desktop/whattodo-2-1200@2x.jpg   2x 
+                            "
+                            media="(min-width: 1200px)"
+                            type="img/webp"
+                            />
+                            <source
+                            srcset="
+                            ./images/desktop/whattodo-2-1200@1x.jpg  1x,
+                            ./images/desktop/whattodo-2-1200@2x.jpg   2x 
+                            "
+                            media="(min-width: 1200px)"
+                            />
+                          
+                           
                             <img src="./images/desktop/whattodo-2-1200@1x.jpg" alt="Телефон и ноутбук" width="370">
                         </picture>
                         <p class="speciality__text">
@@ -238,10 +267,22 @@
                     </li>
                     <li class="speciality__item">
                         <picture>
-                            <source srcset="
-                            ./images/desktop-1x/box3.jpg 1x,
-                            ./images/desktop-2x/box3-desktop-2x 2x
-                            " media="min-wight: 1200px)" />
+                            <source
+                            srcset="
+                            ./images/desktop/whattodo-3-1200@1x.jpg  1x,
+                            ./images/desktop/whattodo-3-1200@2x.jpg   2x 
+                            "
+                            media="(min-width: 1200px)"
+                            type="img/webp"
+                            />
+                            <source
+                            srcset="
+                            ./images/desktop/whattodo-3-1200@1x.jpg  1x,
+                            ./images/desktop/whattodo-3-1200@2x.jpg   2x 
+                            "
+                            media="(min-width: 1200px)"
+                            />
+                          
                             <img src="./images/desktop/whattodo-3-1200@1x.jpg" alt="Планшет с изображением" width="370">
                         </picture>
                         <p class="speciality__text">
@@ -258,7 +299,56 @@
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="list team__list">
                     <li class="team__member">
+                        <picture>
+                            <source
+                            srcset="
+                            ./images/desktop/team-1-1200@1x.jpg  1x,
+                            ./images/desktop/team-1-1200@2x.jpg   2x 
+                            "
+                            media="(min-width: 1200px)"
+                            type="img/webp"
+                            />
+                            <source
+                            srcset="
+                            ./images/desktop/team-1-1200@1x.jpg  1x,
+                            ./images/desktop/team-1-1200@2x.jpg   2x 
+                            "
+                            media="(min-width: 1200px)"
+                            />
+                          
+                            <source
+                            srcset="
+                            ./images/tablet/team-1-768@1x.jpg  1x,
+                            ./images/tablet/team-1-768@2x.jpg   2x 
+                            "
+                            media="(min-width: 768px)"
+                            type="img/webp"
+                            />
+                            <source
+                            srcset="
+                            ./images/tablet/team-1-768@1x.jpg  1x,
+                            ./images/tablet/team-1-768@2x.jpg   2x 
+                            "
+                            media="(min-width: 768px)"
+                            />
+                            <source
+                            srcset="
+                            ./images/mobile/team-1-480@1x.jpg  1x,
+                            ./images/mobile/team-1-480@2x.jpg   2x 
+                            "
+                            media="(min-width: 320px)"
+                            type="img/webp"
+                            />
+                            <source
+                            srcset="
+                            ./images/mobile/team-1-480@1x.jpg  1x,
+                            ./images/mobile/team-1-480@2x.jpg   2x 
+                            "
+                            media="(min-width: 320px)"
+                            />
+
                         <img src="./images/desktop/team-1-1200@1x.jpg" alt="Фото Игоря Демьяненка" width="270">
+                        </picture>
                         <div class="team__position">
                             <h3 class="team__title">Игорь Демьяненко</h3>
                             <p lang="en" class="team__text">Product Designer</p>
@@ -297,7 +387,55 @@
                     </li>
 
                     <li class="team__member">
+                        <picture>
+                            <source
+                            srcset="
+                            ./images/desktop/team-2-1200@1x.jpg  1x,
+                            ./images/desktop/team-2-1200@2x.jpg   2x 
+                            "
+                            media="(min-width: 1200px)"
+                            type="img/webp"
+                            />
+                            <source
+                            srcset="
+                            ./images/desktop/team-2-1200@1x.jpg  1x,
+                            ./images/desktop/team-2-1200@2x.jpg   2x 
+                            "
+                            media="(min-width: 1200px)"
+                            />
+                          
+                            <source
+                            srcset="
+                            ./images/tablet/team-2-768@1x.jpg  1x,
+                            ./images/tablet/team-2-768@2x.jpg   2x 
+                            "
+                            media="(min-width: 768px)"
+                            type="img/webp"
+                            />
+                            <source
+                            srcset="
+                            ./images/tablet/team-2-768@1x.jpg  1x,
+                            ./images/tablet/team-2-768@2x.jpg   2x 
+                            "
+                            media="(min-width: 768px)"
+                            />
+                            <source
+                            srcset="
+                            ./images/mobile/team-2-480@1x.jpg  1x,
+                            ./images/mobile/team-2-480@2x.jpg   2x 
+                            "
+                            media="(min-width: 320px)"
+                            type="img/webp"
+                            />
+                            <source
+                            srcset="
+                            ./images/mobile/team-2-480@1x.jpg  1x,
+                            ./images/mobile/team-2-480@2x.jpg   2x 
+                            "
+                            media="(min-width: 320px)"
+                            />
                         <img src="./images/desktop/team-2-1200@1x.jpg" alt="Фото Ольги Репиной" width="270">
+                        </picture>
                         <div class="team__position">
                             <h3 class="team__title">Ольга Репина</h3>
                             <p lang="en" class="team__text">Frontend Developer</p>
@@ -337,8 +475,55 @@
                     </li>
 
                     <li class="team__member">
+                        <picture>
+                            <source
+                            srcset="
+                            ./images/desktop/team-3-1200@1x.jpg  1x,
+                            ./images/desktop/team-3-1200@2x.jpg   2x 
+                            "
+                            media="(min-width: 1200px)"
+                            type="img/webp"
+                            />
+                            <source
+                            srcset="
+                            ./images/desktop/team-3-1200@1x.jpg  1x,
+                            ./images/desktop/team-3-1200@2x.jpg   2x 
+                            "
+                            media="(min-width: 1200px)"
+                            />
+                          
+                            <source
+                            srcset="
+                            ./images/tablet/team-3-768@1x.jpg  1x,
+                            ./images/tablet/team-3-768@2x.jpg   2x 
+                            "
+                            media="(min-width: 768px)"
+                            type="img/webp"
+                            />
+                            <source
+                            srcset="
+                            ./images/tablet/team-3-768@1x.jpg  1x,
+                            ./images/tablet/team-3-768@2x.jpg   2x 
+                            "
+                            media="(min-width: 768px)"
+                            />
+                            <source
+                            srcset="
+                            ./images/mobile/team-3-480@1x.jpg  1x,
+                            ./images/mobile/team-3-480@2x.jpg   2x 
+                            "
+                            media="(min-width: 320px)"
+                            type="img/webp"
+                            />
+                            <source
+                            srcset="
+                            ./images/mobile/team-3-480@1x.jpg  1x,
+                            ./images/mobile/team-3-480@2x.jpg   2x 
+                            "
+                            media="(min-width: 320px)"
+                            />
                         <img src="./images/desktop/team-3-1200@1x.jpg" alt="Фото Николая Тарасова" width="270">
-
+                        </picture>
                         <div class="team__position">
                             <h3 class="team__title">Николай Тарасов</h3>
                             <p lang="en" class="team__text">Marketing</p>
@@ -378,7 +563,55 @@
                     </li>
 
                     <li class="team__member">
+                        <picture>
+                            <source
+                            srcset="
+                            ./images/desktop/team-4-1200@1x.jpg  1x,
+                            ./images/desktop/team-4-1200@2x.jpg   2x 
+                            "
+                            media="(min-width: 1200px)"
+                            type="img/webp"
+                            />
+                            <source
+                            srcset="
+                            ./images/desktop/team-4-1200@1x.jpg  1x,
+                            ./images/desktop/team-4-1200@2x.jpg   2x 
+                            "
+                            media="(min-width: 1200px)"
+                            />
+                          
+                            <source
+                            srcset="
+                            ./images/tablet/team-4-768@1x.jpg  1x,
+                            ./images/tablet/team-4-768@2x.jpg   2x 
+                            "
+                            media="(min-width: 768px)"
+                            type="img/webp"
+                            />
+                            <source
+                            srcset="
+                            ./images/tablet/team-4-768@1x.jpg  1x,
+                            ./images/tablet/team-4-768@2x.jpg   2x 
+                            "
+                            media="(min-width: 768px)"
+                            />
+                            <source
+                            srcset="
+                            ./images/mobile/team-4-480@1x.jpg  1x,
+                            ./images/mobile/team-4-480@2x.jpg   2x 
+                            "
+                            media="(min-width: 320px)"
+                            type="img/webp"
+                            />
+                            <source
+                            srcset="
+                            ./images/mobile/team-4-480@1x.jpg  1x,
+                            ./images/mobile/team-4-480@2x.jpg   2x 
+                            "
+                            media="(min-width: 320px)"
+                            />
                         <img src="./images/desktop/team-4-1200@1x.jpg" alt="Фото Михаила Ермакова" width="270">
+                        </picture>
                         <div class="team__position">
                             <h3 class="team__title">Михаил Ермаков</h3>
                             <p lang="en" class="team__text">UI Designer</p>

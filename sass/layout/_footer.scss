@@ -20,13 +20,13 @@
 .footer__contacts{
   text-align: center;
   justify-content: center;
-  margin-bottom: 60px;
   margin-right: 20px;
   
 }
 .footer__contact-list {
   position: relative;
   display: block;
+  margin-bottom: 60px;
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
   }
